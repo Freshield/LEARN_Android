@@ -19,6 +19,11 @@
 		</activity>
 		<activity android:name=".SecondActivity"
 		android:label="This is SecondActivity">
+			<intent-filter>
+				<action android:name="com.example.activitytest.secondActivity"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<category android:name="com.example.activitytest.MY_CATEGORY"/>
+			</intent-filter>
 		</activity>
 	</application>
 
