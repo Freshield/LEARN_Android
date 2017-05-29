@@ -15,6 +15,7 @@ public class SecondActivity extends BasicActivity {
         intent.putExtra("param1", data1);
         intent.putExtra("param2", data2);
         context.startActivity(intent);
+
     }
 
     @Override

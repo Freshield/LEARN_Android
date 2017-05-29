@@ -51,7 +51,7 @@ public class FirstActivity extends BasicActivity {
                 //Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
                 //startActivity(intent);
 
-                
+
                 SecondActivity.actionStart(FirstActivity.this, "data1", "data2");
 
             }
