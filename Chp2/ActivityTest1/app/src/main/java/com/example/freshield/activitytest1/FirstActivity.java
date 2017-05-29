@@ -11,7 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class FirstActivity extends AppCompatActivity {
+public class FirstActivity extends BasicActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,8 +48,10 @@ public class FirstActivity extends AppCompatActivity {
                 //Intent intent = new Intent(FirstActivity.this, FirstActivity.class);
                 //startActivity(intent);
 
-                Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
-                startActivity(intent);
+                //Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
+                //startActivity(intent);
+
+                SecondActivity.actionStart(FirstActivity.this, "data1", "data2");
 
             }
         });
@@ -97,5 +99,11 @@ public class FirstActivity extends AppCompatActivity {
     protected void onRestart() {
         super.onRestart();
         Log.d("FirstActivity", "onRestart");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d("FirstActivity", "onDestroy: ");
     }
 }
