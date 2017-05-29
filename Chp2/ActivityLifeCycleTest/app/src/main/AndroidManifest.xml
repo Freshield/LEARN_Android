@@ -19,7 +19,7 @@
 		<activity android:name=".NormalActivity">
 		</activity>
 		<activity android:name=".DialogActivity"
-		          android:theme="@android:style/Theme.Dialog">
+		          android:theme="@style/Theme.AppCompat.Dialog">
 		</activity>
 	</application>
 
