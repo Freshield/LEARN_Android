@@ -19,6 +19,7 @@ public class SecondActivity extends AppCompatActivity {
         //Intent intent = getIntent();
         //String data = intent.getStringExtra("extra_data");
         //Log.d("SecondActivity", data);
+        
 
         Button button2 = (Button) findViewById(R.id.button_2);
         button2.setOnClickListener(new View.OnClickListener(){
