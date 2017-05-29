@@ -32,12 +32,34 @@ public class FirstActivity extends AppCompatActivity {
                 //Intent intent = new Intent(Intent.ACTION_VIEW);
                 //intent.setData(Uri.parse("http://www.baidu.com"));
 
-                Intent intent = new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel:10086"));
-                startActivity(intent);
+                //Intent intent = new Intent(Intent.ACTION_DIAL);
+                //intent.setData(Uri.parse("tel:10086"));
+
+                //String data = "Hello SecondActivity";
+                //Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
+                //intent.putExtra("extra_data", data);
+                //startActivity(intent);
+
+                Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
+                startActivityForResult(intent, 1);
+
             }
         });
         Log.d("create", "onCreate: "+this.toString());
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        switch (requestCode){
+            case 1:
+                if (resultCode == RESULT_OK){
+                    String returnData = data.getStringExtra("data_return");
+                    Log.d("FirstActivity", returnData);
+                }
+                break;
+            default:
+                break;
+        }
     }
 
     @Override
