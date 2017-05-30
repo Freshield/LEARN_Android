@@ -29,6 +29,15 @@
 	        android:maxLines="2"
 	/>
 
+	<ProgressBar
+			android:id="@+id/progress_bar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+	/>
+	<!---style="?android:attr/progressBarStyleHorizontal"-->
+	<!---android:max="100"-->
+
+
 	<ImageView
 			android:id="@+id/image_view"
 			android:layout_width="wrap_content"
@@ -36,10 +45,5 @@
 			android:src="@drawable/imag_1"
 	/>
 
-	<ProgressBar
-			android:id="@+id/progress_bar"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-	/>
 
 </LinearLayout>
