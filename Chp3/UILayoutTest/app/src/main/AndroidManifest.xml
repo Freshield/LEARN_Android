@@ -14,9 +14,11 @@
 		<activity android:name=".RelativeLayout">
 		</activity>
 		<activity android:name=".FrameLayout">
-
 		</activity>
 		<activity android:name=".percentFrameLayout">
+
+		</activity>
+		<activity android:name=".CustomTitle">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN"/>
 
