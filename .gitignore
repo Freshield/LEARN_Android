@@ -36,3 +36,7 @@ captures/
   
 # Keystore files  
 *.jks
+
+#custom
+*.png
+*.jpg
