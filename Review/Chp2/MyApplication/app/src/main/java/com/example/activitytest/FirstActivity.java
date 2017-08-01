@@ -20,6 +20,7 @@ public class FirstActivity extends AppCompatActivity {
             public void onClick(View v){
                 //Toast.makeText(FirstActivity.this, "You clicked Button 1",Toast.LENGTH_SHORT).show();
                 finish();
+
             }
         });
     }
